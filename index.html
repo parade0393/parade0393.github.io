@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>移动端开发工程师简历</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 20mm;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: "Microsoft YaHei", "PingFang SC", sans-serif;
+            font-size: 12px;
+            line-height: 1.6;
+            color: #333;
+            background: white;
+            max-width: 210mm;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .header {
+            text-align: center;
+            border-bottom: 2px solid #2c5aa0;
+            padding-bottom: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .name {
+            font-size: 28px;
+            font-weight: bold;
+            color: #2c5aa0;
+            margin-bottom: 8px;
+        }
+        
+        .position {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 10px;
+        }
+        
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            font-size: 11px;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .section {
+            margin-bottom: 20px;
+        }
+        
+        .section-title {
+            font-size: 16px;
+            font-weight: bold;
+            color: #2c5aa0;
+            border-left: 4px solid #2c5aa0;
+            padding-left: 10px;
+            margin-bottom: 10px;
+        }
+        
+        .subsection {
+            margin-bottom: 15px;
+        }
+        
+        .subsection-title {
+            font-size: 14px;
+            font-weight: bold;
+            color: #444;
+            margin-bottom: 5px;
+        }
+        
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+        
+        .company {
+            font-weight: bold;
+            color: #2c5aa0;
+        }
+        
+        .duration {
+            color: #666;
+            font-size: 11px;
+        }
+        
+        .job-title {
+            color: #666;
+            font-size: 11px;
+            margin-bottom: 8px;
+        }
+        
+        .content-list {
+            padding-left: 0;
+            list-style: none;
+        }
+        
+        .content-list li {
+            margin-bottom: 3px;
+            position: relative;
+            padding-left: 12px;
+        }
+        
+        .content-list li:before {
+            content: "•";
+            color: #2c5aa0;
+            position: absolute;
+            left: 0;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+        
+        .skill-category {
+            background: #f8f9fa;
+            padding: 10px;
+            border-radius: 5px;
+            border-left: 3px solid #2c5aa0;
+        }
+        
+        .skill-title {
+            font-weight: bold;
+            color: #2c5aa0;
+            margin-bottom: 5px;
+        }
+        
+        .project-header {
+            background: #f8f9fa;
+            padding: 8px 12px;
+            border-radius: 5px;
+            margin-bottom: 8px;
+        }
+        
+        .project-name {
+            font-weight: bold;
+            color: #2c5aa0;
+        }
+        
+        .tech-stack {
+            color: #666;
+            font-size: 11px;
+            margin-top: 2px;
+        }
+        
+        .highlight {
+            color: #2c5aa0;
+            font-weight: bold;
+        }
+        
+        .two-column {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        
+        @media print {
+            body {
+                font-size: 11px;
+            }
+            .section {
+                page-break-inside: avoid;
+                margin-bottom: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="name">付雷彬</div>
+        <div class="position">移动端开发工程师（Android/跨平台/小程序开发）</div>
+        <div class="contact-info">
+            <div class="contact-item">
+                <span>📱</span>
+                <span>137-0393-7803(微信同号)</span>
+            </div>
+            <div class="contact-item">
+                <span>✉️</span>
+                <span>13703937803@163.com</span>
+            </div>
+            <div class="contact-item">
+                <span>📍</span>
+                <span>河南省洛阳市老城区</span>
+            </div>
+            <div class="contact-item">
+                <span>💼</span>
+                <span>7年工作经验</span>
+            </div>
+            <div class="contact-item">
+                <span>🔗</span>
+                <span>GitHub: github.com/parade0393</span>
+            </div>
+            <div class="content-item">
+                <span>📝</span>
+                <span>https://juejin.cn/user/3773179639113831</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">核心技能</div>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <div class="skill-title">🚀 移动端开发</div>
+                <ul class="content-list">
+                    <li><span class="highlight">Android原生开发</span>：精通Kotlin/Java，熟练使用Jetpack组件</li>
+                    <li><span class="highlight">架构模式</span>：熟练运用MVVM、MVP架构模式</li>
+                    <li><span class="highlight">网络框架</span>：熟练使用OkHttp/Retrofit</li>
+                    <li><span class="highlight">自定义组件</span>：丰富的自定义View开发经验</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <div class="skill-title">🌐 跨平台开发</div>
+                <ul class="content-list">
+                    <li><span class="highlight">Vue.js全栈</span>：精通Vue.js框架及生态</li>
+                    <li><span class="highlight">小程序开发</span>：丰富的微信小程序开发经验</li>
+                    <li><span class="highlight">跨端应用</span>：熟练使用Uniapp开发多端应用</li>
+                    <li><span class="highlight">混合开发</span>：Android+Flutter混合开发经验</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">工作经历</div>
+        
+        <div class="subsection">
+            <div class="job-header">
+                <div class="company">洛阳建企大数据服务有限公司</div>
+                <div class="duration">2020.11 - 至今（4年+）</div>
+            </div>
+            <div class="job-title">移动端开发工程师</div>
+            <ul class="content-list">
+                <li>主导Android端政务通项目重构，采用MVP+ARouter+H5混合架构，<span class="highlight">通讯录查询性能显著提升</span></li>
+                <li>独立开发物业管理App，使用MVVM+Jetpack+Room架构，实现核心数据离线缓存功能</li>
+                <li>负责Uniapp重构政务通项目，实现Android/iOS/HarmonyOS三端<span class="highlight">85%代码复用率</span></li>
+                <li>开发微信小程序"洛邑约拍"和洛邑古城官方网站</li>
+                <li>完成多个应用的市场上架适配工作，确保应用商店合规性要求</li>
+            </ul>
+        </div>
+        
+        <div class="subsection">
+            <div class="job-header">
+                <div class="company">三智信息技术（洛阳）有限公司</div>
+                <div class="duration">2017.11 - 2020.11（3年）</div>
+            </div>
+            <div class="job-title">运维工程师/Android开发工程师</div>
+            <ul class="content-list">
+                <li>负责公司网站和OA系统的测试、部署、实施、运维工作</li>
+                <li>开发内部办公App，采用Android+MVVM+Jetpack架构</li>
+                <li>参与多个政务类项目的技术实施和后期维护工作</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">核心项目经验</div>
+        
+        <div class="subsection">
+            <div class="project-header">
+                <div class="project-name">政务通移动办公平台</div>
+                <div class="tech-stack">技术栈：Java + MVP + ARouter + RxJava + Realm、Vue.js + Vant UI</div>
+            </div>
+            <ul class="content-list">
+                <li>完成项目AndroidX迁移，解决新旧版本兼容性问题</li>
+                <li>使用多线程优化方案，通讯录加载速度显著提升</li>
+                <li>适配暗黑模式和平板设备，应用内字体大小调整功能</li>
+                <li>工作台页面配置化重构，支持动态配置功能模块</li>
+                <li>使用Uniapp重构整个项目（开发完成，待发布）</li>
+            </ul>
+        </div>
+        
+        <div class="subsection">
+            <div class="project-header">
+                <div class="project-name">智慧物业管理系统</div>
+                <div class="tech-stack">技术栈：Kotlin + MVVM + Room + 多渠道打包、Vue.js + Vant UI</div>
+            </div>
+            <ul class="content-list">
+                <li><span class="highlight">独立负责项目架构设计和完整开发实现</span></li>
+                <li>设计统一的基础组件库（Dialog、BottomSheet等）</li>
+                <li>集成华为扫码SDK，优化白天扫码识别效果</li>
+                <li>物业巡查模块使用Room离线缓存，支持地下室等无网环境扫码上报</li>
+            </ul>
+        </div>
+        
+        <div class="subsection">
+            <div class="project-header">
+                <div class="project-name">智慧人大管理系统</div>
+                <div class="tech-stack">技术栈：Vue3 + TypeScript + Element Plus、Uniapp</div>
+            </div>
+            <ul class="content-list">
+                <li>管理端开发：代表管理、代表团组、履职档案等核心模块开发</li>
+                <li>组件封装：Radio、Select、Table、Tabs等组件二次封装</li>
+                <li>移动端开发：使用Uniapp适配Android、小程序和H5三端</li>
+            </ul>
+        </div>
+        <div class="subsection">
+            <div class="project-header">
+                <div class="project-name">洛邑约拍小程序 + 洛邑古城官网</div>
+                <div class="tech-stack">技术栈：原生小程序 + Vant Weapp、Vue.js + Bootstrap</div>
+            </div>
+            <ul class="content-list">
+                <li>微信小程序项目架构搭建，根据用户角色动态切换Tab</li>
+                <li>使用Promise二次封装网络请求，统一错误处理</li>
+                <li>基础组件二次封装（加载更多、图片上传等）</li>
+                <li>完成小程序发布上线流程</li>
+                <li>使用Bootstrap Vue构建响应式官网</li>
+            </ul>
+        </div>
+        <div class="subsection">
+            <div class="project-header">
+                <div class="project-name">其他维护项目</div>
+            </div>
+            <ul class="content-list">
+                <li>工程眼APP：Java + MVP + ARouter + RxJava，负责功能维护和需求变更开发</li>
+                <li>工会APP：Android + Flutter混编架构，负责后期功能维护</li>
+                <li>政协APP：Flutter开发，负责功能维护和需求变更</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="two-column">
+        <div class="section">
+            <div class="section-title">教育背景</div>
+            <div class="subsection">
+                <div class="subsection-title">洛阳理工学院 | 自动化专业 | 专升本</div>
+                <div class="duration">2012.09 - 2014.06</div>
+                <p>主修课程：模拟电子技术、数字电子技术、自动控制原理及应用</p>
+            </div>
+            <div class="subsection">
+                <div class="subsection-title">洛阳达内培训 | Java开发培训</div>
+                <div class="duration">2017.06 - 2017.11</div>
+                <p>系统学习Java后端开发技术栈</p>
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="section-title">个人优势</div>
+            <ul class="content-list">
+                <li><span class="highlight">英语能力</span>：CET-4级别，能够流畅阅读英文技术文档</li>
+                <li><span class="highlight">全栈能力</span>：从0开发基于RBAC权限的后台管理系统(java+Vue3)</li>
+                <li><span class="highlight">技术深度</span>：7年移动端开发经验，熟悉完整产品开发生命周期</li>
+                <li><span class="highlight">学习能力</span>：技术博客活跃，持续关注新技术趋势</li>
+                <li><span class="highlight">团队协作</span>：具备良好的跨部门沟通协作能力</li>
+            </ul>
+        </div>
+    </div>
+    
+    <script>
+        // 添加打印功能
+        function printResume() {
+            window.print();
+        }
+        
+        // 添加导出Word功能的提示
+        console.log('要保存为Word文档，请使用浏览器的打印功能，选择"保存为PDF"，然后可以在Word中打开PDF进行进一步编辑。');
+    </script>
+</body>
+</html>
